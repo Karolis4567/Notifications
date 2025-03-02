@@ -1,0 +1,18 @@
+services:
+  notifications.api:
+    image: ${DOCKER_REGISTRY-}notificationsapi
+    build:
+      context: .
+      dockerfile: Notifications.Api/Dockerfile
+   
+  notifications.database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "9GzbsWD9JzD93tu" 
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+volumes:
+  mssql-data: 

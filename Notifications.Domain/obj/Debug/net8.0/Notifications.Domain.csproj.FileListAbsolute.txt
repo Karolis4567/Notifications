@@ -1,0 +1,11 @@
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\bin\Debug\net8.0\Notifications.Domain.deps.json
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\bin\Debug\net8.0\Notifications.Domain.dll
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\bin\Debug\net8.0\Notifications.Domain.pdb
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.AssemblyInfoInputs.cache
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.AssemblyInfo.cs
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.csproj.CoreCompileInputs.cache
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.dll
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\refint\Notifications.Domain.dll
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\Notifications.Domain.pdb
+C:\Users\karol\source\repos\Notifications\Notifications.Domain\obj\Debug\net8.0\ref\Notifications.Domain.dll

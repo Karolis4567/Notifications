@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Notifications.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Company/GetVersion": {
+      "get": {
+        "tags": [
+          "Company"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Notification/GetVersion": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

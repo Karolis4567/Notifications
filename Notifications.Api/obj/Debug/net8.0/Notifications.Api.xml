@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Notifications.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Notifications.Api.Controllers.CompanyController.CreateCompanyAsync(Notifications.Application.DTOs.CompanyCreateDto)">
+            <summary>
+            Creates company
+            CompanyTypeCode -> (s)small, (m) medium, (l)large
+            CompanyMarketCode -> (DK) Denmark, (NO) Norway, (SE) Sweden, (FI) Finland
+            </summary>
+            <param name="companyCreateDto">Parameter object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Notifications.Api.Controllers.CompanyNotificationController.GetCompanyNotificationsScheduleAssignRulesAsync">
+            <summary>
+            Returns only rules information for Company - NotificationSchedules assigments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Notifications.Api.Controllers.CompanyNotificationController.GetCompanyNotificationSchedulesAsync(System.Guid,System.Nullable{System.DateOnly})">
+            <summary>
+            Returns companyId with notification schedule
+            </summary>
+            <param name="companyId">Guid companyId</param>
+            <param name="date">Optional parameter, if null - notification shown for current date, not null notifications shown for provided date </param>
+            <returns>companyId with notification schedule</returns>
+        </member>
+    </members>
+</doc>

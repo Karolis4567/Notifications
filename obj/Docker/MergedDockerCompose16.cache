@@ -1,0 +1,56 @@
+name: dockercompose7325208142488229249
+services:
+  notifications.api:
+    build:
+      context: C:\Users\karol\source\repos\Notifications
+      dockerfile: Notifications.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: notificationsapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\karol\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\karol\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  notifications.database:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: 9GzbsWD9JzD93tu
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mssql-data
+        target: /var/opt/mssql
+        volume: {}
+networks:
+  default:
+    name: dockercompose7325208142488229249_default
+volumes:
+  mssql-data:
+    name: dockercompose7325208142488229249_mssql-data

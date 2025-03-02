@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "Notifications.Api.Controllers.CompanyController",
+    "Method": "GetVersion",
+    "RelativePath": "api/Company/GetVersion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Notifications.Api.Controllers.NotificationController",
+    "Method": "GetVersion",
+    "RelativePath": "api/Notification/GetVersion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
